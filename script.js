@@ -44,7 +44,7 @@ function drawWheel() {
     ctx.translate(cx, cy);
     ctx.rotate(start + slice / 2);
     ctx.textAlign = "right";
-    ctx.font = "14px Arial";
+    ctx.font = "23px Arial";
     ctx.fillStyle = "#000";
     ctx.fillText(names[i], r - 10, 5);
     ctx.restore();
@@ -113,3 +113,4 @@ nameInput.addEventListener("input", () => {
   drawWheel();
 
 });
+
