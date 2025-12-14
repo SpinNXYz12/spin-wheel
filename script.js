@@ -1,5 +1,5 @@
 /* ================== ตั้งค่าล็อก ================== */
-const LOCK_INDEX = 0; // 0 = ชื่อแรก, 1 = ชื่อถัดไป
+const LOCK_INDEX = 1; // 0 = ชื่อแรก, 1 = ชื่อถัดไป
 /* ================================================= */
 
 const canvas = document.getElementById("wheel");
@@ -111,4 +111,5 @@ const nameInput = document.getElementById("nameInput");
 nameInput.addEventListener("input", () => {
   loadNames();
   drawWheel();
+
 });
