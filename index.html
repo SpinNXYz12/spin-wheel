@@ -204,13 +204,13 @@ spinSound.play();         // เล่นเสียงหมุน
     if (p < 1) requestAnimationFrame(animate);
     else {
       spinning = false;
+
+      alert("🎯 ได้ชื่อ: " + names[LOCK_INDEX]);
       spinSound.pause();
 spinSound.currentTime = 0;
 
 winSound.currentTime = 0;
 winSound.play();
-
-      alert("🎯 ได้ชื่อ: " + names[LOCK_INDEX]);
     }
   }
   requestAnimationFrame(animate);
@@ -230,4 +230,5 @@ nameInput.addEventListener("input", () => {
 
 </body>
 </html>
+
 
