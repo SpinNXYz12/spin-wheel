@@ -28,7 +28,9 @@
 Ned
 Robret
 Jaime
-Catalyn
+Cataly
+Jorah
+Cersei
 </textarea><br>
 
 
@@ -182,8 +184,15 @@ canvas.addEventListener("click", e => {
 });
 
 /* หมุน (logic เดิม) */
-function spin() {spinSound.currentTime = 0; // รีเซ็ตเสียง
-spinSound.play();         // เล่นเสียงหมุน
+function spin() {
+  if (spinning) return;
+
+  // 🧹 ล้างผลลัพธ์เก่า
+  document.getElementById("result").textContent = "";
+
+  spinSound.currentTime = 0;
+  spinSound.play();
+
   if (spinning) return;
   loadNames();
   if (!names.length) return alert("ใส่รายชื่อก่อน");
